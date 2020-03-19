@@ -17,7 +17,7 @@ public class CalculatorSonarAppApplication {
 	public CommandLineRunner run(ProductService productService) {
 		return args -> {
 			productService.init();
-			System.out.println("Une nouvelle version");
+			System.out.println("Une nouvelle version +1");
 		};
 	}
 
