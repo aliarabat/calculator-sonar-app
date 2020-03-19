@@ -22,7 +22,7 @@ class CalculatorSonarAppApplicationTests {
 
 	void productDoesntExist() {
 		Product pFounded = pRepository.getOne((long) 4);
-		assertThat(pFounded).isNull();
+		assertThat(pFounded).isNotNull();
 	}
 
 }
