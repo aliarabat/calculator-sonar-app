@@ -20,6 +20,7 @@ class CalculatorSonarAppApplicationTests {
 		assertThat(pFounded).isNotNull();
 	}
 
+	@Test
 	void productDoesntExist() {
 		Product pFounded = pRepository.getOne((long) 4);
 		assertThat(pFounded).isNotNull();
